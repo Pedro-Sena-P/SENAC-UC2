@@ -106,9 +106,20 @@ h1{
 
 .reverse-colors{
     background: url('../img/background.png');
+    background: url('SENAC-UC2/img/background.png');
+    background: url(../img/background.png);
+    background: url(SENAC-UC2/img/background.png);
+    background: url('../../img/background.png');
+    background: url(../../img/background.png);
+    background-image: url('../img/background.png');
+    background-image: url('SENAC-UC2/img/background.png');
+    background-image: url(../img/background.png);
+    background-image: url(SENAC-UC2/img/background.png);
+    background-image: url('../../img/background.png');
+    background-image: url(../../img/background.png);
     background-blend-mode: lighten;
     background-size: contain;
-    color: white;
+    color: green;
     padding: 3% 0% 2% 7%;
 }
 
