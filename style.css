@@ -105,6 +105,12 @@ h1{
 }
 
 .reverse-colors{
+    background-image: url('../background.png'); 
+    background-image: url('background.png'); 
+    background-image: url('/background.png'); 
+    background-image: url(../background.png); 
+    background-image: url(/background.png); 
+    background-image: url(background.png); 
     background-color: rgba(66, 34, 3, 0.7);
     background-blend-mode: lighten;
     background-size: contain;
