@@ -9,7 +9,7 @@ p{
 
 h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 3.2rem;
+    font-size: 3rem;
 }
 
 .container-fluid{
@@ -18,27 +18,21 @@ h1{
 }
 
 .header{
-    padding-left: 15%;
     box-shadow: 0px 5px 5px 5px black;
     position: relative;
     z-index: 2;
     background-color: rgb(66, 34, 3);
+    padding-left: 15%;
 }
 
 .navbar-nav{
-    margin-left: 5%;
+    margin-left: 3%;
 }
 
 .navbar-toggler{
     background-color: rgb(204, 202, 188);
-    margin-right: 10%;
-}
-
-.logo{
-    width: 100%;
-    max-width: 180px;
-    min-height: 40px;
-    display: block;
+    margin-left:3%; 
+    margin-top:3%;
 }
 
 .nav-link{
@@ -49,14 +43,22 @@ h1{
     margin-top: 3vh;
 }
 
-.fig-logo{
+/*Talvez a melhor forma de fazer uma imagem responsiva seja usando vh, aspect-ratio (para manter a proporção entre altura e largura)*/
+/*e definindo uma altura mínima para que a imagem não fique minúscula em telas menores.*/
+.logo{
+    height: 10vh;
+    min-height: 70px;
+    aspect-ratio: 2.24/1;
+}
+
+.header .figure{
     padding-top: 0.5%;
 }
 
 .footer{
     background-color: rgb(24, 24, 24);
     min-height: 30vh;
-    padding: 0% 20% 0% 20%;
+    padding: 0% 20% 30px 20%;
     align-items: baseline;
 }
 
@@ -100,17 +102,8 @@ h1{
     font-size: 1rem;
 }
 
-.widget-whatsapp div{
-    height: 10vh;
-}
-
 .reverse-colors{
-    background-image: url('../background.png'); 
-    background-image: url('background.png'); 
-    background-image: url('/background.png'); 
-    background-image: url(../background.png); 
-    background-image: url(/background.png); 
-    background-image: url(background.png); 
+    background-image: url(background.png);
     background-color: rgba(66, 34, 3, 0.7);
     background-blend-mode: lighten;
     background-size: contain;
@@ -118,6 +111,9 @@ h1{
     padding: 3% 0% 2% 7%;
 }
 
+.fb-page{
+    width: 300px;
+}
 
 /*Homepage*/
 .carousel-inner{
@@ -139,12 +135,12 @@ h1{
 }
 
 .homepage .section-1 h1{
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     justify-content: center;
     text-align: center;
 }
 
-.homepage .section-1 p{
+.homepage .section-1 h5{
     text-align: center;
 }
 
@@ -158,6 +154,11 @@ h1{
     text-decoration: none;
 }
 
+.homepage .btn{
+     width: 110px;
+     margin-left: 0%;
+}
+
 .homepage .section-5{
     min-height: 30vh;
     text-align: center;
@@ -168,6 +169,9 @@ h1{
 
 .homepage .section-5 .card{
     background-color: rgb(190, 190, 190);
+    margin-bottom: 3%;
+    min-width: 300px;
+    max-width: 400px;
 }
 
 .homepage .section-5 .row{
@@ -184,16 +188,20 @@ h1{
 
 /*Quem Somos*/
 .quem-somos .content{
-    padding: 2% 20% 1% 20%;
+    margin: 30px 10% 30px 10%;
 }
 
-.quem-somos p{
+.quem-somos .content .row{
     text-align: justify;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5%;
 }
 
 .quem-somos-logo-fig{
     text-align: center;
-    margin: 0% 0% 1% 0%;
+    margin-bottom: 1%;
 }
 
 .quem-somos-logo-img{
@@ -203,62 +211,50 @@ h1{
 
 .quem-somos h1{
     text-align: center;
-    margin-bottom: 2%;
+    margin-bottom: 60px;
 }
 
 .quem-somos h4{
     text-align: center;
-    margin-bottom: 7%;
+    margin-bottom: 60px;
     font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
-.quem-somos-fig-1 {
+.quem-somos-fig-1{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:flex-start;
+    vertical-align:text-top;
 }
 
 .quem-somos-img-1{
-    height: 33vh;
-    border: 4px solid black;
+    height: 20vh;
 }
 
 
 /*Nossas Máquinas*/
 .maquinas .content .row{
-    padding-left: 9%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding: 40px 10% 30px 10%;
+}
+
+.maquinas h4{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 .maquinas .section-1{
-    padding-top: 2%;
-    padding-bottom: 2%;
+    text-align: center;
 }
 
-.maquinas .section-1 h1{
+.maquinas .section-1 h1, .maquinas .section-1 p{
     text-align:center;
-    padding-right: 9%;
-}
-
-.maquinas .section-1 p{
-    text-align:center;
-    padding-bottom: 2%;
-    padding-right: 9%;
+    padding: 0% 7% 0% 0%;
 }
 
 .maquinas .section-1 figcaption{
     text-align: center;
-    font-style: italic;
-    margin-right: 20%;
+    font-style: italic; 
     margin-top: 5%;
-}
-
-.maquinas .section-1 img{
-    height: 20vh;
-    border: 2px solid black;
-    padding: 2%;
-    border-radius: 10%;
 }
 
 .maquinas .content img{
@@ -272,10 +268,22 @@ h1{
     border-radius: 10%;
 }
 
+.maquinas .section-1 .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0% 30px 0%;
+}
 
 /*Café e Insumos*/
 .cafe .content .row{
-    padding: 3% 7% 2% 7%;
+    padding: 40px 10% 30px 10%;
+}
+
+.cafe h4{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 .cafe .section-1{
@@ -292,51 +300,55 @@ h1{
     padding-bottom: 2%;
 }
 
-.cafe .section-2 p, .cafe .section-2 h1{
-    padding-left: 20%;
+.cafe .content .section-2 img{
+    height: 40vh;
 }
 
-.cafe .content img{
+.cafe .content .section-3 img{
     height: 40vh;
+    border: 4px solid black;  
 }
 
 
 /*Manutenção*/
 .manutencao .content{
-    padding: 2% 20% 5% 20%;
+    margin: 30px 10% 30px 10%;
+}
+
+.manutencao .content .row{
+    text-align: justify;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5%;
 }
 
 .manutencao h1{
     text-align: center;
-    margin-bottom: 2%;
+    margin-bottom: 10px;
 }
 
 .manutencao h4{
     text-align: center;
-    margin-bottom: 7%;
+    margin-bottom: 60px;
     font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-}
-
-.manutencao p{
-    justify-content: center;
 }
 
 .manutencao-fig-1{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .manutencao-img-1{
     height: 33vh;
+    min-height: 250px;
     border: 4px solid black;
 }
-
 
 /*Fale Conosco*/
 .fale-conosco .content{
     color: black;
-    margin-top: 2%;
+    margin: 40px 0 40px 0;
     text-align: center;
     justify-content: center;
 }
@@ -370,7 +382,12 @@ label{
     margin-top: 2%;
 }
 
-.btn{
+.fale-conosco .btn{
     margin-left: 1%;
     margin-top: 2%;
+}
+
+.fale-conosco .card{
+    background-color: rgb(233, 233, 233);
+    margin-bottom: 20px;
 }

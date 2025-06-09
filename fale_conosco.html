@@ -12,24 +12,26 @@
 <body class="fale-conosco">
   <div class="container-fluid">
   
-    <nav class="header navbar navbar-expand-lg">
-      <figure class="fig-logo">
-        <a href="index.html"><img class="logo" src="img/logo.png" alt="café na banca"></a>
-      </figure>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline">
-          <li class="nav-item"><a class="nav-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="quem_somos.html">Quem Somos</a></li>
-          <li class="nav-item"><a class="nav-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="maquinas.html">Nossas Máquinas</a></li>
-          <li class="nav-item"><a class="nav-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="cafe.html">Café e Insumos</a></li>
-          <li class="nav-item"><a class="nav-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="manutencao.html">Manutenção Gratuita</a></li>
-          <li class="nav-item"><a class="nav-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="fale_conosco.html">Fale Conosco</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div class="header">
+      <nav class="navbar navbar-expand-xl row">
+        <figure class="col-11 col-xl-2 d-flex justify-content-center align-items-center position-relative">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="index.html" class="mx-auto"><img class="logo" src="img/logo.png" alt="café na banca"></a>
+        </figure>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline">
+            <li class="nav-item"><a class="nav-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="quem_somos.html">Quem Somos</a></li>
+            <li class="nav-item"><a class="nav-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="maquinas.html">Nossas Máquinas</a></li>
+            <li class="nav-item"><a class="nav-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="cafe.html">Café e Insumos</a></li>
+            <li class="nav-item"><a class="nav-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="manutencao.html">Manutenção Gratuita</a></li>
+            <li class="nav-item"><a class="nav-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="fale_conosco.html">Fale Conosco</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
     <div class="content">
         <h1>Fale Conosco</h1>
@@ -56,31 +58,31 @@
                 <fieldset class="col-md-12 row">
                     <div class="col-md-3">
                         <label for="inputName" class="form-label">Nome</label>
-                        <input type="text fonte_form" class = "form-control nome" name="nome" id="nome" maxlength="50" required>
+                        <input type="text fonte_form" class = "form-control nome" id="inputNome" name="inputNome" maxlength="50" required>
                     </div>
                     <div class="col-md-3">
                         <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4">
+                        <input type="email" class="form-control" id="inputEmail" name="inputEmail" required>
                     </div>
                     <div class="col-md-3">
                         <label for="inputTelephone" class="form-label">Telefone</label>
-                        <input type="text" class="form-control" id="inputTelephone">
+                        <input type="text" class="form-control" id="inputTelephone" name="inputTelephone" onkeypress="tel(inputTelephone)" maxlength="14" required>
                     </div>
                     <div class="col-md-6">
                         <label for="inputAddress" class="form-label">Endereço</label>
-                        <input type="text" class="form-control" id="inputAddress">
+                        <input type="text" class="form-control" id="inputAddress" name="inputAddress" required>
                     </div>
                     <div class="col-md-3">
                         <label for="inputCity" class="form-label">Cidade</label>
-                        <input type="text" class="form-control" id="inputCity">
+                        <input type="text" class="form-control" id="inputCity" name="inputCity" required>
                     </div>
                     <div class="col-md-3">
                         <label for="inputState" class="form-label">Estado</label>
-                        <input type="text" class="form-control" id="inputState">
+                        <input type="text" class="form-control" id="inputState" name="inputState" required>
                     </div>
                     <div class="col-12">
                         <label for="inputMessage" class="form-label">Deixe sua Mensagem: </label>
-                        <textarea class="form-control" id="inputMessage" rows="5"></textarea>
+                        <textarea class="form-control" id="inputMessage" rows="5" required></textarea>
                     </div>
                     <div class="col-12">
                         <button type="submit" class="btn btn-primary">Enviar</button>
@@ -89,31 +91,30 @@
                 </fieldset>
             </form>
         </div>
-        <br><br>
     </div>
 
     <div class="footer row">
-        <div class="col-12 col-lg-4">
-          <p class="footer-title">CONTATO</p>    
-          <a href="https://wa.me/5521993046255?text=&#8202" target="_blank"><p class="footer-subtitle">Telefone (wpp)</p>
-          <p class="footer-text">(21) 99304-6255</p></a>
-          <a href="mailto:fisiofrp@yahoo.com.br" target="_blank"><p class="footer-subtitle">E-mail</p> 
-          <p class="footer-text">fisiofrp@yahoo.com.br</p></a>
+        <div class="col-12 col-sm-6 col-md-4">
+            <p class="footer-title">CONTATO</p>    
+            <a href="https://wa.me/5521993046255?text=&#8202" target="_blank"><p class="footer-subtitle">Telefone (wpp)</p>
+            <p class="footer-text">(21) 99304-6255</p></a>
+            <a href="mailto:fisiofrp@yahoo.com.br" target="_blank"><p class="footer-subtitle">E-mail</p> 
+            <p class="footer-text">fisiofrp@yahoo.com.br</p></a>
         </div>
-        <div class="col-12 col-lg-4">
-          <p class="footer-title">MENU</p>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="quem_somos.html">Quem Somos</a></li>
-            <li><a href="maquinas.html">Nossas Máquinas</a></li>
-            <li><a href="cafe.html">Café e Insumos</a></li>
-            <li><a href="manutencao.html">Manutenção Gratuita</a></li>
-            <li><a href="fale_conosco.html">Fale Conosco</a></li>
-          </ul>
+        <div class="col-12 col-sm-4 col-md-4">
+            <p class="footer-title">MENU</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quem_somos.html">Quem Somos</a></li>
+                <li><a href="maquinas.html">Nossas Máquinas</a></li>
+                <li><a href="cafe.html">Café e Insumos</a></li>
+                <li><a href="manutencao.html">Manutenção Gratuita</a></li>
+                <li><a href="fale_conosco.html">Fale Conosco</a></li>
+            </ul>
         </div>
-        <div class="col-lg-4">
-          <p class="footer-title">FACEBOOK</p>
-          <div class="fb-page" data-href="https://www.facebook.com/cafenabanca" data-tabs="exemplo" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/cafenabanca" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cafenabanca">Café na Banca Com. de Produtos alimentícios Ltda.</a></blockquote></div>
+        <div class="col-12 col-sm-5 col-md-4">
+            <p class="footer-title">FACEBOOK</p>
+            <div class="fb-page" data-href="https://www.facebook.com/cafenabanca" data-tabs="messages" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/cafenabanca" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cafenabanca">Café na Banca Com. de Produtos alimentícios Ltda.</a></blockquote></div>
         </div>
     </div>
 
@@ -135,6 +136,7 @@
         <!--Início Script Bootstrap-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
         <!--Fim Script Bootstrap--> 
+        <script type="text/javascript" language="javascript" src="script.js"></script>
     </div> 
 </body>
 </html>
